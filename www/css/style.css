@@ -1,0 +1,63 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.header .col {
+  background-color:lightgrey;
+}
+
+.col {
+  border: solid 1px grey;
+  border-bottom-style: none;
+  border-right-style: none;
+}
+
+.col:last-child {
+  border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+  border-bottom: solid 1px grey;
+}
+#bck{
+  background-color: darkslategray;
+}
+#styled-select {
+  width: 200px;
+  height: 34px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin:auto;
+  border-radius:6px;
+}
+
+#styled-select select {
+  background: transparent;
+  width: 80px;
+  padding: 5px;
+  font-size: 30px;
+  line-height: 5;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  font-family:helvetica-roman;
+  color:#9C9C9C;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  border: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+.ion-md-input {
+  position: relative;
+  margin-top: 45px;
+  margin-left: 20px;
+  display: block; }
+
+.Custumpane{
+  background:url('http://cdn7.staztic.com/app/a/2870/2870616/ios-7-background-1-0-s-307x512.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,32 @@
+<div ng-controller="verifyCtrl">
+<ion-view view-title="Verify Your Number">
+  <ion-nav-buttons side="right" ng-hide="">
+    <a class="button icon ion-checkmark-round">Done</a>
+  </ion-nav-buttons>
+  <ion-content>
+    <div class="row">
+      <div class="col-100">
+        <div class="card">
+          <div class="item item-text-wrap">
+            ShoppingPad App will send one time SMS message to verify your phone number.
+            </div>
+          </div>
+        <div class="card">
+            <div class="item item-text-wrap">
+              Please Confirm Your Country Code and Enter Your phone Number
+            <select class="" ng-model="country" ng-init="country=countries[0]" ng-options="country.name for country in countries"></select>
+            <br />
+            <form name="myForm">
+                <input type="text" ng-model="country.dial_code" readonly width="25">
+                  <input type="text" name="phoneNum" ng-model="phoneNum" ng-pattern="/^(\d)+$/" required ng-minlength="10" ng-maxlength="10"/>
+              <button class="button button-dark"  ng-disabled="myForm.$invalid" ng-click="verify()">
+                Verify Now
+              </button>
+            </form>
+          </div>
+         </div>
+        </div>
+      </div>
+</ion-content>
+</ion-view>
+</div>

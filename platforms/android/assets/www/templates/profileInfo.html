@@ -1,0 +1,29 @@
+<div ng-controller="profileInfoCtrl">
+  <ion-view view-title="Profile Info">
+    <ion-nav-buttons side="right" ng-hide="">
+      <a class="button icon ion-checkmark-round">Done</a>
+    </ion-nav-buttons>
+    <ion-content>
+      <div class="row">
+        <div class="col-30">
+          <img src="../img/default.jpeg">
+          <!--<ion-option-button ng-click="selectImage()"></ion-option-button>-->
+          <button class="button button-dark" ng-click="uploadPic()">Select Profile Picture</button>
+          </div>
+        <div class="col-60">
+          <div class="ion-card">
+            <div class="item-text-wrap">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-90">
+          <input type="text" placeholder="Type Your Name Here" required>
+          <button class="button button-icon">Go</button>
+          </div>
+        </div>
+      </ion-content>
+    </ion-view>
+</div>

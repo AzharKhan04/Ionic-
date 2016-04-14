@@ -1,0 +1,27 @@
+<ion-view view-title="Shopping Pad">
+  <ion-content>
+    <!--controller for this template is loginController-->
+    <div ng-controller="loginController">
+      <div class="list">
+        <label class="item item-input">
+
+          <input type="text" id="user" ng-model="userName" placeholder="User Name">
+        </label>
+        <label class="item item-input">
+          <input type="password" id="password" ng-model="userPass" placeholder="Password">
+        </label>
+      </div>
+      <br />
+      <br />
+      <button  class="button button-block button-positive" ng-click="login()">
+        Sign In
+      </button>
+      <br />
+      <center><a ui-sref="register" >New User? Create an Account</a></center>
+      <br />
+      <button class="button button-block button-positive" ng-click="github()">
+        I am Feeling Lazy SignIn with Facebook
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

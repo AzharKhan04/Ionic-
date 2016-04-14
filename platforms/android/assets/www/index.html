@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then remove the CSS include above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/ionic/js/angular/angular.min.js"></script>
+    <script src="lib/ionic/js/angular-ui/angular-ui-router.min.js"></script>
+    <script src="lib/ionic/js/satellizer/satellizer.min.js"></script>
+    <script src="lib/ion-md-input/ion-md-input.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="Controllers/loginCtrl.js"></script>
+    <script  src="Controllers/signupCtrl.js"></script>
+    <script src="Controllers/verifyCtrl.js"></script>
+    <script src="Controllers/profileInfoCtrl.js"></script>
+    <script src="services/service.js"></script>
+    <script src="services/verifyNumber.js"></script>
+  </head>
+  <body ng-app="shopApp">
+  <ion-nav-bar class="bar bar-royal">
+
+  </ion-nav-bar>
+  <ion-nav-view></ion-nav-view>
+    </body>
+</html>
